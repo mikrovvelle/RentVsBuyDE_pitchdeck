@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Renting vs. Buying in Germany</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Renting vs. Buying in Germany">
+  <meta name="author" content="daniel">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Renting vs. Buying in Germany</h1>
+    <h2>A financial scenario comparison tool</h2>
+    <p>daniel<br/>expatriot</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Renting vs. Buying</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is the most significant financial decision most people make.</p>
+
+<p>Inspired by the New York Times&#39; <a href="http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html?_r=0">&quot;Is It Better to Rent or Buy?&quot;</a>,
+using different terms which are typical to the German market.</p>
+
+<ul class = "build incremental">
+<li>Some based their decision on wisdom, aphorisms, advice</li>
+<li>I want to look at the numbers</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Buying scenario in Germany:</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The 30-year fixed rate mortgage isn&#39;t typical for Germany. Loans are usually 5, 10 or 15 years, and only pay off a portion of the principle.</p>
+
+<p>The &quot;Tilgung&quot; is the yearly percent reduction of the principle, usually 1-5%.</p>
+
+<pre><code class="r">price &lt;- 500000       # half-million EUR
+downPayment &lt;- 25000  # 5%
+interest &lt;- 0.028     # 2.8%
+tilgung &lt;- 0.02       # 2% principle reduction each year
+years &lt;- 10           # 10 years fixed-rate
+</code></pre>
+
+<p>Homeowners bear additional costs, both at the time of purchase, and as recurring maintenance and taxes (included in calculations). </p>
+
+<p>But they also get the upside if the home value appreciates:</p>
+
+<pre><code class="r">appreciation &lt;- 0.02  # 2% increase in German real-estate, historically
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Renting scenario, with investment</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Renting is cheaper up front.</p>
+
+<pre><code class="r">rent &lt;- 1500
+annualRentHike &lt;- 0.01       # Maybe 2% one year, 0 the next
+</code></pre>
+
+<p>That leaves some money left over which you can invest:</p>
+
+<pre><code class="r">monthlyContribution &lt;- 500   # A rough estimate on what I have left over
+marketReturn &lt;- 0.04         # A somewhat sober prediction of 4%
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Final comparison: total net loss/gain:</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Renting:</h3>
+
+<pre><code>##   Total.Spent Monthly.Cost Total.Value Net.Gain
+## 1      248320         2069       73897  -174423
+</code></pre>
+
+<h3>Buying:</h3>
+
+<pre><code>##   Total.Spent Monthly.Cost Total.Value Net.Gain
+## 1      442530         3688      122140  -320390
+</code></pre>
+
+<p>Renting looks better to me, by about 146000€,
+but you should try out your own scenario <a href="https://www.shinyapps.io/admin/#/application/61979">in the app</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Renting vs. Buying'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Buying scenario in Germany:'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Renting scenario, with investment'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Final comparison: total net loss/gain:'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -99,7 +99,7 @@ marketReturn <- 0.04         # A somewhat sober prediction of 4%
 ```
 
 Renting looks better to me, by about 146000€,
-but you should try out your own scenario [in the app](https://www.shinyapps.io/admin/#/application/61979).
+but you should try out your own scenario [in the app](https://mikrovvelle.shinyapps.io/RentVsBuyDE).
 
 
 
